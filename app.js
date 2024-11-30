@@ -8,7 +8,7 @@ const socketio = require("socket.io");
 const server = http.createServer(app);
 const io = socketio(server);
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT;
 
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
